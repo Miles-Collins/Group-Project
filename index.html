@@ -14,20 +14,38 @@
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-dark navbar-expand bg-dark text-light no-select">
-      <a class="navbar-brand ms-3" href="#">
-        <img src="https://codeworks.blob.core.windows.net/public/assets/img/cw-mark.png" height="45" alt=""
-          loading="lazy">
-        <span class="ms-2">Group-Project</span>
-      </a>
-    </nav>
-  </header>
   <main>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12">
-          <div id="app"></div>
+        <div class="col-3 left-bar text-light">
+          <h1 class="m-2">Gifted</h1>
+          <div class="row">
+            <div class="col-12">
+              <label for="">Tag</label>
+              <input type="text">
+            </div>   
+            <div class="col-12">
+              <label for="">URL</label>
+              <input type="text">
+            </div>
+            <div class="col-2 offset-8 btn">
+              <button>SUBMIT</button>
+            </div>
+            <div class="col-12 border-top pt-3">
+              <label for="">Search Gif</label>
+              <input type="search" name="" id="">
+            </div>
+          </div>
+
+        </div>
+        <div class="col-8">
+          <div onclick="app.giftController" id="cards" class="row">
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="row">
+
         </div>
       </div>
     </div>
@@ -43,6 +61,7 @@
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.10/dist/sweetalert2.all.min.js"
     integrity="sha256-hw7v8jZF/rFEdx1ZHepT4D73AFTHLu/P9kEyrNesRyc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.23.0/axios.min.js" ></script>
   <script src="app/main.js" type="module"></script>
 </body>
 

@@ -1,1 +1,14 @@
 /* BASIC STYLES HERE */
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.left-bar {
+  height: 100VH;
+  background-color: #37663c;
+}
+
+/* .meme-card {
+  height: 35VH;
+  width: 5VW;
+} */
